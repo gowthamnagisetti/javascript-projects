@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color:rgb(173, 213, 247);
+    min-height: 50vh;
+    align-items: center;
+    color: rgb(22, 25, 59);
+    background-clip: url(./background.mp4);
+}
+
+h1{
+    text-align: center;
+}
+.search-bar{
+    margin-top: 1rem;
+    border: 1px solid rgb(22, 25, 59);
+    border-radius: 1rem;
+}
+.search-bar input{
+    padding: 1rem;
+    padding-right: 3rem;
+    background: transparent;
+    border: none;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    outline: 0;
+    
+}
+.search-bar button{
+    padding: 1rem;
+    background: rgb(22, 25, 59);
+    border: none;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    padding-right: 2rem;
+    font-size: medium;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder; 
+    cursor: pointer;
+    color: rgb(173, 213, 247);
+    
+}
+#sbtn{
+    border-radius:0.5rem ;
+    padding: 0.51rem;
+    background-color:rgb(22, 25, 59) ;
+    border: none;
+    cursor: pointer;
+    display: none;
+    margin-bottom: 1.3rem;
+    color: rgb(173, 213, 247);
+}
+::placeholder{
+    color: rgb(22, 25, 59);
+    font-weight: bolder;
+    font-size: medium;
+}
+#image-boxes {
+    width: 80%;
+    margin: 100px auto 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap:40px ;
+}
+#image-boxes img{
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+    cursor: pointer;
+}
+img:hover{
+    opacity: 0.9;
+}
+footer{
+    position: fixed;
+    bottom:0%;
+}
+#myVideo {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -4;
+    opacity: 100%;
+ }
+ footer {
+    position: fixed;
+    bottom: 0%;
+    width: 100%;
+    color: #fff; 
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    gap: 10px;
+}
+
+.profile-badges {
+    display: flex;
+    gap: 10px;
+}
+
+.profile-badges a {
+    color: #fff; 
+    text-decoration: none;
+    font-size: 24px; 
+    transition: color 0.3s;
+}
+
+.profile-badges a:hover {
+    color: #0077B5; 
+}
+
+.profile-badges a:nth-child(1):hover {
+    color: #000404; 
+}
